@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tworzenie graifki w C++</title>
+</head>
+<body bgcolor="#9CA3FF">
+    <!--Sekcja nagłówka-->
+    <center>
+        <header>
+            <table align="center" width="100%" height="200px" bgcolor="#3A44D6" border="4px" bordercolor="#262D8C" cellspacing="10px">
+                <tr>
+                    <td align="center">
+                        <a href="../index.html">
+                            <img src="../Obrazy/cpp_logo.png" height="200px" title="Kilknij aby powrócić do głównej strony">
+                        </a>
+                    </td>
+                    <td>
+                        <font size="5" face="Sans-serif" color="white">
+                            <h1>Tworzenie <u><i>grafiki</i></u>, od <u><i>pikseli</i></u> do silników 3D w <b><mark>C++</mark></b></h1>
+                        </font>
+                    </td>
+                </tr>
+            </table>
+        </header>
+        <br>
+    <!--Sekcja paska nawigacyjnego-->
+        <nav>
+            <table border="2px" bordercolor="#00A3A3" width="98%" height="50px" bgcolor="white" cellspacing="2px">
+                <tr>
+                    <th width="25%" bgcolor="#E8FFFF">
+                        <a href="Obrazy.html" title="Kilknij aby poznać możliwości bibliotek graficznych">Możliwości Bibliotek Graficznych</a>
+                    </th>
+                    <th width="25%" bgcolor="#E8FFFF">
+                        <a href="Tabele.html" title="Kliknij aby poznać którą bibliotekę graficzną wybrać">Którą bibliotekę graficzną wybrać?</a>
+                    </th>
+                    <th width="25%" bgcolor="#E8FFFF">
+                        <a href="Dowolne.html" title="Kliknij aby poznać jakie są najważniejsze rzeczy do zawacia w projekcie!">Najważniejsze rzeczy do zawacia w projekcie</a>
+                    </th>
+                    <th width="25%" bgcolor="#E8FFFF">
+                        <a href="Formularze.html" title="Kliknij aby zamówić swoją grę!">Zamów Swoją Grę!</a>
+                    </th>
+                </tr>
+            </table>
+        </nav>
+    </center>
+    <main>
+        <article>
+            <font face="Monospace" size="5">
+                <br><br><br>
+                <hr color="#262D8C">
+                <h2>Spis treści</h2>
+                <ul>
+                    <li>
+                        <a href="#t-1" name="r-1">Rozdział 1 - Którą bibliotekę graficzną wybrać?</a>
+                    </li>
+                    <li>
+                        <a href="#t-2" name="r-2">Rozdział 2 - Od czego zależy wybór?</a>
+                    </li>
+                    <li>
+                        <a href="#t-3" name="r-3">Rozdział 3 - Porównanie bibliotek graficznych</a>
+                    </li>
+                    <li>
+                        <a href="#t-4" name="r-4">Rozdział 4 - Typy grafiki</a>
+                    </li>
+                    <li>
+                        <a href="#t-5" name="r-5">Rozdział 5 - API graficzne</a>
+                    </li>
+                    <li>
+                        <a href="#t-6" name="r-6">Rozdział 6 - Języki programowania</a>
+                    </li>
+                    <li>
+                        <a href="#t-7" name="r-7">Rozdział 7 - Podsumowanie</a>
+                    </li>
+                </ul>
+                <hr color="#262D8C">
+                <br><br><br>
+                <ol>
+                    <!--Pierwszy podpunkt-->
+                    <a href="#r-1" name="t-1">Rozdział 1</a>
+                    <li>
+                        <h1>Którą bibliotekę graficzną wybrać?</h1>
+                    </li>
+                    <font size="6"><p>Wybór biblioteki graficznej w C++ zależy od tego, co chcesz stworzyć oraz jak duże masz doświadczenie. Każda biblioteka ma swoje zalety i zastosowania — od prostych projektów 2D po zaawansowane silniki 3D.</p></font>
+                    <!--Drugi podpunkt-->
+                    <a href="#r-2" name="t-2">Rozdział 2</a>
+                    <li>
+                        <h1>Od czego zależy wybór?</h1>
+                    </li>
+                    <h3>Przed wyborem warto zastanowić się nad kilkoma rzeczami:</h3>
+                    <ul>
+                        <li>
+                            <h3>Czy jesteś początkujący czy zaawansowany</h3>
+                        </li>
+                        <li>
+                            <h3>Czy chcesz tworzyć grafikę 2D czy 3D</h3>
+                        </li>
+                        <li>
+                            <h3>Czy zależy Ci bardziej na prostocie czy wydajności</h3>
+                        </li>
+                        <li>
+                            <h3>Jak duży projekt planujesz</h3>
+                        </li>
+                    </ul>
+                    <!--Trzeci podpunkt-->
+                    <a href="#r-3" name="t-3">Rozdział 3</a>
+                    <li>
+                        <h1>Porównanie bibliotek graficznych</h1>
+                    </li>
+                    <center>
+                        <font color="#143414">
+                            <table border="3px" width="75%" bgcolor="#6BC76B" cellpadding="5" cellspacing="5">
+                                <tr bgcolor="#2EA32E">
+                                    <th>Biblioteka</th>
+                                    <th>Poziom trudności</th>
+                                    <th>Typ grafiki</th>
+                                    <th>Zastosowanie</th>
+                                    <th>Wydajność</th>
+                                </tr>
+                                <tr align="center">
+                                    <td>SFML</td>
+                                    <td>łatwa</td>
+                                    <td rowspan="2" align="center">2D</td>
+                                    <td>nauka, proste gry</td>
+                                    <td>średnia</td>
+                                </tr>
+                                <tr align="center">
+                                    <td>SDL</td>
+                                    <td>średnia</td>
+                                    <td>silniki, narzędzia</td>
+                                    <td>dobra</td>
+                                </tr>
+                                <tr align="center">
+                                    <td>OpenGL</td>
+                                    <td>trudna</td>
+                                    <td>2D/3D</td>
+                                    <td>gry, wizualizacje</td>
+                                    <td>wysoka</td>
+                                </tr>
+                                <tr align="center">
+                                    <td>Vulkan</td>
+                                    <td>bardzo trudna</td>
+                                    <td>3D</td>
+                                    <td>AAA, silniki</td>
+                                    <td>bardzo wysoka</td>
+                                </tr>
+                            </table>
+                        </font>
+                    </center>
+                    <!--Czwarty podpunkt-->
+                    <a href="#r-4" name="t-4">Rozdział 4</a>
+                    <li>
+                        <h1>Typy grafiki</h1>
+                    </li>
+                    <center>
+                        <font color="#081F19">
+                            <table border="3px" width="75%" bgcolor="#6BC7C5" bordercolor="#17302D" cellpadding="5" cellspacing="5">
+                                <tr align="center" bgcolor="#448D83">
+                                    <th>Typ grafiki</th>
+                                    <th>Szczegóły</th>
+                                </tr>
+                                <tr align="center">
+                                    <td rowspan="2">2D</td>
+                                    <td>Sprite'y</td>
+                                </tr>
+                                <tr align="center">
+                                    <td>UI</td>
+                                </tr>
+                                <tr align="center">
+                                    <td rowspan="3">3D</td>
+                                    <td>Modele</td>
+                                </tr>
+                                <tr align="center">
+                                    <td>Oświetlenie</td>
+                                </tr>
+                                <tr align="center">
+                                    <td>Kamera</td>
+                                </tr>
+                                <tr align="center">
+                                    <td>Proceduralna</td>
+                                    <td>Generowanie terenu</td>
+                                </tr>
+                            </table>
+                        </font>
+                    </center>
+                    <!--Piąty podpunkt-->
+                    <a href="#r-5" name="t-5">Rozdział 5</a>
+                    <li>
+                        <h1>API graficzne</h1>
+                    </li>
+                    <center>
+                        <font color="#1F0C08">
+                            <table border="3px" width="75%" bgcolor="#CC533A" bordercolor="#874131" cellpadding="5" cellspacing="5">
+                                <tr bgcolor="#AE422D">
+                                    <th rowspan="2">API</th>
+                                    <th colspan="3">Właściwości</th>
+                                </tr>
+                                <tr bgcolor="#AE422D">
+                                    <th>Kontrola</th>
+                                    <th>Trudność</th>
+                                    <th>Wydajność</th>
+                                </tr>
+                                <tr align="center">
+                                    <td>OpenGL</td>
+                                    <td>Średnia</td>
+                                    <td>Wysoka</td>
+                                    <td>Wysoka</td>
+                                </tr>
+                                <tr align="center">
+                                    <td>Vulkan</td>
+                                    <td>Bardzo wysoka</td>
+                                    <td>Trudna</td>
+                                    <td>Bardzo wysoka</td>
+                                </tr>
+                            </table>
+                        </font>
+                    </center>
+                    <!--Szósty podpunkt-->
+                    <a href="#r-6" name="t-6">Rozdział 6</a>
+                    <li>
+                        <h1>Języki programowania</h1>
+                    </li>
+                    <center>
+                        <font color="#474700">
+                            <table border="3px" width="75%" bgcolor="#FFFF54" bordercolor="#5E5E19" cellpadding="5" cellspacing="5">
+                                <tr bgcolor="#A3A300">
+                                    <th>Typ języka</th>
+                                    <th>Język</th>
+                                    <th>Zastosowanie</th>
+                                </tr>
+                                <tr>
+                                    <th rowspan="2" bgcolor="#A3A300">Niskopoziomowe</th>
+                                    <td>C++</td>
+                                    <td align="right">silniki</td>
+                                </tr>
+                                <tr>
+                                    <td>C</td>
+                                    <td align="right">systemy</td>
+                                </tr>
+                                <tr>
+                                    <th rowspan="2" bgcolor="#A3A300">Wysokopoziomowe</th>
+                                    <td>Python</td>
+                                    <td align="right">nauka</td>
+                                </tr>
+                                <tr>
+                                    <td>C#</td>
+                                    <td align="right">gry</td>
+                                </tr>
+                            </table>
+                        </font>
+                    </center>
+                    <!--Siódmy podpunkt-->
+                    <a href="#r-7" name="t-7">Rozdział 7</a>
+                    <li>
+                        <h1>Podsumowanie</h1>
+                    </li>
+                    <p>
+                        <b>Podsumowując</b>, <i>biblioteki graficzne</i> w <mark><b>C++</b></mark> oferują bardzo szerokie możliwości — od <b>prostych aplikacji 2D</b> po zaawansowane systemy renderowania <b>grafiki 3D</b>. Wybór odpowiedniej biblioteki zależy przede wszystkim od poziomu zaawansowania programisty oraz rodzaju projektu.
+                        <br><br>
+                        Dzięki zastosowaniu tabel i porównań można łatwo zauważyć różnice pomiędzy bibliotekami, takimi jak <b>SFML, SDL, OpenGL</b> czy <b>Vulkan</b>, co znacząco ułatwia wybór odpowiedniego narzędzia.
+                        Warto również zwrócić uwagę na porównanie języków programowania używanych w <b>grafice komputerowej</b>.
+                        <br><br>
+                        Choć <mark><b>C++</b></mark> jest jednym z najpopularniejszych i najbardziej wydajnych wyborów, inne języki — takie jak <b>Python</b>, <b>Java</b> czy <b>C#</b> — również znajdują zastosowanie, szczególnie w prostszych projektach lub przy nauce.
+                        <br><br>
+                        Analiza zarówno <b>bibliotek</b>, jak i języków programowania pozwala lepiej zrozumieć możliwości współczesnej <b>grafiki komputerowej</b> oraz dobrać odpowiednie narzędzia do własnych potrzeb.
+                    </p>
+                </ol>
+            </font>
+        </article>
+    </main>
+</body>
+</html>

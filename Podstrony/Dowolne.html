@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tworzenie grafiki w C++</title>
+</head>
+<body bgcolor="#B39CFF">
+    <!--Sekcja nagłówka-->
+    <center>
+        <header>
+            <table align="center" width="100%" height="200px" bgcolor="#5237B3" border="4px" bordercolor="#3F2D7A" cellspacing="10px">
+                <tr>
+                    <td align="center">
+                        <a href="../index.html">
+                            <img src="../Obrazy/cpp_logo.png" height="200px" title="Kilknij aby powrócić do głównej strony">
+                        </a>
+                    </td>
+                    <td>
+                        <font size="5" face="Sans-serif" color="white">
+                            <h1>Tworzenie <u><i>grafiki</i></u>, od <u><i>pikseli</i></u> do silników 3D w <b><mark>C++</mark></b></h1>
+                        </font>
+                    </td>
+                </tr>
+            </table>
+        </header>
+        <br>
+    <!--Sekcja paska nawigacyjnego-->
+        <nav>
+            <table border="2px" bordercolor="#00A3A3" width="98%" height="50px" bgcolor="white" cellspacing="2px">
+                <tr>
+                    <th width="25%" bgcolor="#E8FFFF">
+                        <a href="Obrazy.html" title="Kilknij aby poznać możliwości bibliotek graficznych">Możliwości Bibliotek Graficznych</a>
+                    </th>
+                    <th width="25%" bgcolor="#E8FFFF">
+                        <a href="Tabele.html" title="Kliknij aby poznać którą bibliotekę graficzną wybrać">Którą bibliotekę graficzną wybrać?</a>
+                    </th>
+                    <th width="25%" bgcolor="#E8FFFF">
+                        <a href="Dowolne.html" title="Kliknij aby poznać jakie są najważniejsze rzeczy do zawacia w projekcie!">Najważniejsze rzeczy do zawacia w projekcie</a>
+                    </th>
+                    <th width="25%" bgcolor="#E8FFFF">
+                        <a href="Formularze.html" title="Kliknij aby zamówić swoją grę!">Zamów Swoją Grę!</a>
+                    </th>
+                </tr>
+            </table>
+        </nav>
+    </center>
+    <main>
+        <article>
+            <font face="Monospace" size="5">
+                <br><br><br>
+                <hr color="#5237B3">
+                <h2>Spis treści</h2>
+                <ul>
+                    <li>
+                        <a href="#t-1" name="r-1">Rozdział 1 - Sterowanie w grze</a>
+                    </li>
+                    <li>
+                        <a href="#t-2" name="r-2">Rozdział 2 - Elementy gry</a>
+                    </li>
+                </ul>
+                <hr color="#5237B3">
+                <a href="#r-1" name="t-1">Rozdzial 1</a>
+                <br>
+                <!--Pierwszy punkt-->
+                <h1>
+                    <u>Sterowanie w grze</u>
+                </h1>
+                <p>W <b>grach</b> tworzonych w <b><mark>C++</mark></b> bardzo ważna jest <b>obsługa wejścia użytkownika</b>, czyli sterowanie postacią lub kamerą.</p>
+            </font>
+            <hr color="#5237B3">
+            <br>
+            <font face="Arial" size="5">
+                <center>
+                    <dl>
+                        <dt>
+                            <h2>Ruch postaci</h2>
+                        </dt>
+                        <dd>Klawisze <kbd>W A S D</kbd> pozwalają <b>poruszać się</b> po mapie.</dd>
+                        <br>
+                        <img src="../Obrazy/wasd.gif" alt="Gif przedstawiajacy klawisze WASD" title="Gif przedstawiajacy klawisze WASD" hspace="3%" width="20%" border="3px">
+                        <dt>
+                            <h2>Skok</h2>
+                        </dt>
+                        <dd>Klawisz <kbd>Spacja</kbd> odpowiada za <b>skok</b> postaci.</dd>
+                        <br>
+                        <img src="../Obrazy/space.gif" alt="Gif przedstawiajacy klawisz spacji" title="Gif przedstawiajacy klawisz spacji" hspace="3%" width="20%" border="3px">
+                        <dt>
+                            <h2>Strzał</h2>
+                        </dt>
+                        <dd>
+                            Kliknięcie <kbd>LPM</kbd> (lewy przycisk myszy) powoduje <b>atak</b>.
+                        </dd>
+                        <br>
+                        <img src="../Obrazy/LPM.gif" alt="Gif przedstawiajacy kliknięcie lewego przycisku myszy" title="Gif przedstawiajacy kliknięcie lewego przycisku myszy" hspace="3%" width="20%" border="3px">
+                        <dt>
+                            <h2>Pauza</h2>
+                        </dt>
+                        <dd>
+                            Klawisz <kbd>Esc</kbd> zatrzymuje grę.
+                        </dd> 
+                        <br>
+                        <img src="../Obrazy/esc.gif" alt="Gif przedstawiajacy klawisz escape" title="Gif przedstawiajacy klawisz escape" hspace="3%" width="20%" border="3px">
+                    </dl>
+                </center>
+            </font>
+            <font face="Monospace" size="6">
+                <br>
+                <hr color="#5237B3">
+                <br>
+                <!--Drugi punkt-->
+                <a href="#r-2" name="t-2">Rozdzial 2</a>
+                <h1>
+                    <u>Elementy gry</u>
+                </h1>
+                <p>Każda <b>gra</b> składa się z kilku podstawowych <b>elementów</b>, które razem tworzą całe <b>środowisko</b> rozgrywki.</p>
+                <br>
+                <hr color="#5237B3">
+                <br>
+                <center>
+                    <dl>
+                        <dt>
+                            <h2>Gracz (Player)</h2>
+                        </dt>
+                        <dd>Sterowana przez <b>użytkownika</b> postać w grze.</dd>
+                        <br>
+                        <img src="../Obrazy/player.gif" alt="Gif przedstawiajacy typowego gracza" title="Gif przedstawiajacy typowego gracza" hspace="3%" width="20%" border="3px">
+                        <dt>
+                            <h2>Przeciwnik (Enemy)</h2>
+                        </dt>
+                        <dd><b>Obiekt</b> sterowany przez <b>AI</b>, który stanowi <b>zagrożenie</b>.</dd>
+                        <br>
+                        <img src="../Obrazy/rzuf.png" alt="Oraz przedstawiajacy niszowego mema o przeciwniku z gry pt. Terraria" title="Oraz przedstawiajacy niszowe porównanie przeciwnika z gry Terraria" hspace="3%" width="20%" border="3px">
+                        <dt>
+                            <h2>Mapa</h2>
+                        </dt>
+                        <dd><b>Świat</b> lub <b>plansza</b>, po której porusza się <b>gracz</b>.</dd>
+                        <br>
+                        <img src="../Obrazy/map.jpg" alt="Oraz przedstawiajacy mapę z gry Minecraft" title="Oraz przedstawiajacy mapę z gry Minecraft" hspace="3%" width="20%" border="3px">
+                        <dt>
+                            <h2>Interfejs (UI)</h2>
+                        </dt>
+                        <dd><b>Elementy</b> wyświetlane na ekranie, np. <b>życie, punkty, menu</b>.</dd>
+                        <br>
+                        <img src="../Obrazy/gui.png" alt="Oraz przedstawiajacy gui z gry Minecr" title="Oraz przedstawiajacy gui z gry Minecraft" hspace="3%" width="20%" border="3px">                        
+                    </dl>
+                </center>
+                <br>
+                <hr color="#5237B3">
+                <br>
+            </font>
+        </article>
+    </main>
+</body>
+</html>
