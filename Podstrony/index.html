@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tworzenie grafiki w C++</title>
+    </head>
+    <body bgcolor="#C5FF9C">
+        <!--Sekcja nagłówka-->
+        <center>
+            <header>
+                <table align="center" width="100%" height="200px" bgcolor="#89AB74" border="4px" bordercolor="#355D19" cellspacing="10px">
+                    <tr>
+                        <td align="center">
+                            <a href="index.html">
+                                <img src="Obrazy/cpp_logo.png" height="200px" title="Kilknij aby powrócić do głównej strony">
+                            </a>
+                        </td>
+                        <td>
+                            <font size="5" face="Sans-serif" color="white">
+                                <h1>Tworzenie <u><i>grafiki</i></u>, od <u><i>pikseli</i></u> do silników 3D w <b><mark>C++</mark></b></h1>
+                            </font>
+                        </td>
+                    </tr>
+                </table>
+            </header>
+            <br>
+        <!--Sekcja paska nawigacyjnego-->
+            <nav>
+                <table border="2px" bordercolor="#00A3A3" width="98%" height="50px" bgcolor="white" cellspacing="2px">
+                    <tr>
+                        <th width="25%" bgcolor="#E8FFFF">
+                            <a href="Podstrony/Obrazy.html" title="Kilknij aby poznać możliwości bibliotek graficznych">Możliwości Bibliotek Graficznych</a>
+                        </th>
+                        <th width="25%" bgcolor="#E8FFFF">
+                            <a href="Podstrony/Tabele.html" title="Kliknij aby poznać którą bibliotekę graficzną wybrać">Którą bibliotekę graficzną wybrać?</a>
+                        </th>
+                        <th width="25%" bgcolor="#E8FFFF">
+                            <a href="Podstrony/Dowolne.html" title="Kliknij aby poznać jakie są najważniejsze rzeczy do zawacia w projekcie!">Najważniejsze rzeczy do zawacia w projekcie</a>
+                        </th>
+                        <th width="25%" bgcolor="#E8FFFF">
+                            <a href="Podstrony/Formularze.html" title="Kliknij aby zamówić swoją grę!">Zamów Swoją Grę!</a>
+                        </th>
+                    </tr>
+                </table>
+            </nav>
+        </center>
+        <!--Sekcja Treści dokumentu-->
+        <main>
+            <article>
+                <font face="Monospace" size="5">
+                    <br><br><br>
+                    <hr color="#355D19">
+                    <h2>Spis treści</h2>
+                    <ul>
+                        <li>
+                            <a href="#t-1" name="r-1">Rozdział 1 - Czym jest grafika w C++?</a>
+                        </li>
+                        <li>
+                            <a href="#t-2" name="r-2">Rozdział 2 - Podstawowe pojęcia</a>
+                        </li>
+                        <li>
+                            <a href="#t-3" name="r-3">Rozdział 3 - Jedne z najpopularniejszych Bibliotek graficznych</a>
+                        </li>
+                        <li>
+                            <a href="#t-4" name="r-4">Rozdział 4 - Typy grafiki</a>
+                        </li>
+                    </ul>
+                    <hr color="#355D19">
+                    <br><br><br>
+                    <!--Rozdział 1-->
+                    <center>
+                        <a href="#r-1" name="t-1">Rozdział 1</a>
+                        <font color="#27331A">
+                            <h1>Czym jest <u>grafika</u> w <mark><b>C++</b></mark>?</h1>
+                        </font>
+                    </center>
+                    <p><u><b>Grafika</b></u> w <mark><b>C++</b></mark> to dziedzina programowania, która pozwala tworzyć obrazy, animacje i całe środowiska wizualne przy użyciu kodu. Jest wykorzystywana w grach, aplikacjach oraz symulacjach.
+                    <br><br>
+                    Na najprostszym poziomie polega na pracy z pikselami, a na bardziej zaawansowanym - na wykorzystaniu specjalnych <b>bibliotek</b> i <b>API</b> do renderowania grafiki w czasie rzeczywistym.    
+                    </p>
+                    <h2>Obejmuje:</h2>
+                    <ul>
+                        <li>Rendering (generowanie obrazu)</li>
+                        <li>Manipulację pikselami</li>
+                        <li>Pipeline graficzny</li>
+                    </ul>
+                    <!--Rozdział 2-->
+                    <center>
+                        <a href="#r-2" name="t-2">Rozdział 2</a>
+                        <font color="#27331A">
+                            <h1>Podstawowe pojęcia!</h1>
+                        </font>
+                    </center>
+                    <p>Zanim zaczniesz tworzyć <u><b>grafikę</b></u>, warto zrozumieć kilka kluczowych mechanizmów, które stoją za wyświetlaniem obrazu.</p>
+                    <ul type="circle">
+                        <li>
+                            <h3>Rendering</h3>
+                        </li>
+                        Rendering to proces tworzenia obrazu na podstawie danych - na przykład rysowania obiektów, tekstur i światła na ekranie.
+                        <li>
+                            <h3>Manipulacja pikselami</h3>
+                        </li>
+                        To najniższy poziom pracy z grafiką. Polega na bezpośredniej zmianie pojedynczych pikseli, co daje pełną kontrolę, ale wymaga więcej pracy.
+                        <li>
+                            <h3>Pipeline graficzny</h3>
+                        </li>
+                        Pipeline graficzny to zestaw etapów, przez które przechodzą dane graficzne - od modelu, przez transformacje, aż do finalnego obrazu.
+                    </ul>
+                    <!--Rozdział 3-->
+                    <center>
+                        <a href="#r-3" name="t-3">Rozdział 3</a>
+                        <font color="#27331A">
+                            <h1>Jedne z najpopularniejszych <mark>Bibliotek graficznych</mark></h1>
+                        </font>
+                    </center>
+                    Aby nie pisać wszystkiego od zera, programiści korzystają z bibliotek, które ułatwiają tworzenie grafiki.
+                    <ol type="1">
+                        <li>
+                            <a href="https://www.sfml-dev.org/" target="_blank" title="Kilknij aby przejść do oficjalnej strony SFML">
+                                <img src="Obrazy/SFML_logo.png" height="120px" width="300px">
+                            </a>
+                        </li>
+                        Prosta i przyjazna biblioteka dla początkujących. Pozwala szybko tworzyć okna, rysować obiekty 2D i obsługiwać zdarzenia.
+                        <li>
+                            <a href="https://www.libsdl.org/" target="_blank" title="Kilknij aby przejść do oficjalnej strony SDL">
+                                <img src="Obrazy/SDL_logo.png" height="120px" width="300px">
+                            </a>
+                        </li>
+                        Daje większą kontrolę nad działaniem programu i sprzętem. Często używana w bardziej zaawansowanych projektach i silnikach gier.
+                        <li>
+                            <a href="https://learnopengl.com/" target="_blank" title="Kilknij aby przejść do oficjalnej strony OpenGL">
+                                <img src="Obrazy/OpenGL_logo.png" height="120px" width="300px">
+                            </a>
+                        </li>
+                        Jedno z najpopularniejszych API do grafiki 3D. Umożliwia tworzenie zaawansowanych scen, ale wymaga zrozumienia działania grafiki komputerowej.
+                        <li>
+                            <a href="https://www.vulkan.org/learn" target="_blank" title="Kilknij aby przejść do oficjalnej strony Vulkan'a">
+                                <img src="Obrazy/Vulkan_Logo.png" height="120px" width="300px">
+                            </a>
+                        </li>
+                        Nowoczesne i bardzo wydajne API. Pozwala bezpośrednio zarządzać GPU, ale jest znacznie trudniejsze w nauce.
+                    </ol>
+                    <!--Rozdział 4-->
+                    <center>
+                        <a href="#r-4" name="t-4">Rozdział 4</a>
+                        <font color="#27331A">
+                            <h1>Typy <u>grafiki</u></h1>
+                        </font>
+                    </center>
+                    Grafika komputerowa może przyjmować różne formy, w zależności od zastosowania.
+                    <ul type="square">
+                        <li><h2>Grafika 2D</h2></li>
+                        Używana głównie w prostszych grach i interfejsach użytkownika.
+                        <ol type="I">
+                            <li>Sprite’y</li>
+                            <li>UI</li>
+                            <li>Animacje</li>
+                        </ol>
+                        <li><h2>Grafika 3D</h2></li>
+                        Pozwala tworzyć trójwymiarowe światy i realistyczne sceny.
+                        <ol type="i">
+                            <li>Modele 3D</li>
+                            <li>Oświetlenie</li>
+                            <li>Kamery i perspektywa</li>
+                        </ol>
+                        <li><h2>Grafika proceduralna</h2></li>
+                        Tworzona matematycznie zamiast przy użyciu gotowych obrazów.
+                        <ol type="a">
+                            <li>Generowanie terenu</li>
+                            <li>Szumy (noise)</li>
+                            <li>Fraktale</li>
+                        </ol>
+                        <font color="#27331A">
+                            <h1>Dlaczego warto?</h1>
+                        </font>
+                        <p><b>Grafika</b> w <b><mark>C++</mark></b> daje ogromne możliwości - od tworzenia <b>gier</b>, przez <b>silniki graficzne</b>, aż po <b>zaawansowane symulacje</b>. To także świetny sposób, żeby zrozumieć, jak działa komputer „od środka” i jak program komunikuje się z <b><mark>kartą graficzną</mark></b>.</p>
+                </font>
+            </article>
+        </main>
+    </body>
+</html>
